@@ -1,73 +1,53 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Doosra
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+**Doosra** is a powerful platform providing fast and reliable cricket APIs, combined with AI-enabled prompt answering capabilities. Built with **NestJS** for the backend and **PostgreSQL** for data management, Doosra is designed to deliver seamless performance and intelligent cricket data processing.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Features
 
-## Description
+- **Real-Time Cricket APIs**: Get up-to-date data on ongoing matches, player stats, team rankings, and more.
+- **AI-Enabled Querying**: Ask cricket-related questions, and let our AI model provide insightful responses.
+- **Match Details**: Retrieve live scores, commentary, and player stats.
+- **Team & Player Info**: Access detailed statistics and profiles for teams and players.
+- **Historical Data**: Explore past matches, seasons, and tournaments.
+- **Flexible APIs**: Easy-to-use, RESTful APIs with detailed documentation for developers.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Technology Stack
 
-## Installation
+- **Backend Framework**: [NestJS](https://nestjs.com/) - A progressive Node.js framework for building efficient, reliable, and scalable server-side applications.
+- **Database**: [PostgreSQL](https://www.postgresql.org/) - A powerful, open-source object-relational database.
+- **AI Integration**: Uses **Machine Learning** models to provide intelligent and contextual responses for cricket-related queries.
+- **TypeScript**: Type-safe development using TypeScript for both the backend and AI layers.
+  
+## Getting Started
 
-```bash
-$ npm install
+### Prerequisites
+
+To run this project, you will need:
+
+- **Node.js** (v14 or higher)
+- **PostgreSQL** (v12 or higher)
+- **Nest CLI** (Optional, for development)
+
+### Installation
+
+1. Clone the repository:
+```sh
+git clone https://github.com/chandakash/doosra.git
 ```
-
-## Running the app
-
+2. Navigate to the project directory:
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+cd doosra
 ```
-
-## Test
-
+3. Set up the environment variables. Create a .env file in the root directory with the following values:
 ```bash
-# unit tests
-$ npm run test
+DATABASE_HOST=localhost
+DATABASE_PORT=5432
+DATABASE_USER=yourusername
+DATABASE_PASSWORD=yourpassword
+DATABASE_NAME=doosra
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+4. To start the development server
+```bash
+npm run start:dev
+```
